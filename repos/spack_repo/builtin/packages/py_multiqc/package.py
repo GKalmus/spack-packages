@@ -24,6 +24,7 @@ class PyMultiqc(PythonPackage):
 
     depends_on("py-setuptools", type="build")
 
+    depends_on("py-boto3, type=("build", "run"), when="@1.29")
     depends_on("py-click", type=("build", "run"))
     depends_on("py-humanize", type=("build", "run"))
     depends_on("py-importlib-metadata", type=("build", "run"))
