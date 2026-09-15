@@ -48,4 +48,8 @@ depends_on("py-pyyaml@4:", type=("build", "run"))
     depends_on("py-spectra@0.0.10:", type=("build", "run"))
     depends_on("py-tiktoken", type=("build", "run"))
     depends_on("py-tqdm", type=("build", "run"))
+    depends_on("py-typeguard@4:", type=("build", "run"), when="@1.35:")
     depends_on("py-typeguard", type=("build", "run"))
+
+    # Historical Dependencies
+    depends_on("py-pyaml-env", type=("build", "run"), when="@:1.24")
